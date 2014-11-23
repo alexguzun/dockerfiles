@@ -10,7 +10,7 @@ RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true 
 RUN sudo apt-get install oracle-java8-set-default oracle-java8-installer -y
 
 # Set the WILDFLY_VERSION env variable
-ENV WILDFLY_VERSION 8.1.0.Final
+ENV WILDFLY_VERSION 8.2.0.Final
 
 # Add the WildFly distribution to /opt
 RUN cd /opt && wget http://download.jboss.org/wildfly/$WILDFLY_VERSION/wildfly-$WILDFLY_VERSION.tar.gz 
